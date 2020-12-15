@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d '{"username": "Slade", "content": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Slade_-_TopPop_1973_19.png"}' "https://discord.com/api/webhooks/662392200163885057/qAAQY1CuQ39-g9jrHlVY3Z7QfuzFCkWWNz6VbWWt_VwnLYdpmYuEsPYyRadoIVuTy7b-" 
