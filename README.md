@@ -7,7 +7,7 @@ I don't know myself yet.
 
 As a wise man once said? Bro, don't worry about it.
 
-##What can Sladebot do?
+<h1>What can Sladebot do?</h1>
 
 Currently? **ABSOLUTELY NOTHING**
 
