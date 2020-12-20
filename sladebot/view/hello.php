@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Testing</title>
+    <link href="style/style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <h1>Welcome!</h1>
