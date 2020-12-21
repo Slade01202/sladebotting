@@ -17,11 +17,11 @@ div {
 .side_menu {
     float: left;
     background-color: lightslategrey;
-    height: auto;
+    height: 800px;
     max-height: 800px;
-    width: auto;
+    width: 180px;
     max-width: 180px;
-    outline: darkslategrey solid 1px;
+    outline: darkslategrey solid 5px;
     clear-after: both;
     margin: 10px
 }
