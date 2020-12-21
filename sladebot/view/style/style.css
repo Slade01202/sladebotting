@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
     font-family: SansSerif, serif;
 }
 
@@ -13,3 +13,12 @@ div {
     color: white;
 }
 
+.side_menu {
+    float: left;
+    background-color: lightslategrey;
+    height: auto;
+    max-height: 800px;
+    width: auto;
+    max-width: 180px;
+    outline: darkslategrey solid 1px;
+}
