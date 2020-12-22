@@ -30,8 +30,6 @@ class Loader
         $randIndex = rand(0, ($this->questionCount() - 2));
         if (!array_key_exists($randIndex, $this->bannedIndex)) {
             $this->bannedIndex[$randIndex] = $randIndex;
-            var_dump($this->bannedIndex);
-            var_dump($this->questions["questions"][$randIndex]);
             return $this->questions["questions"][$randIndex];
         } else {
             $this->getSingleQuestion();
