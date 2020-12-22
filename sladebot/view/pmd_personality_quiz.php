@@ -10,7 +10,7 @@ $viewQuestions = new pmdFront(30)?>
             <?php foreach ($viewQuestions->getQuestionArray() as $viewQuestion) {?>
             <h4><?= $viewQuestion["question"]?></h4><br>
             <?php foreach ($viewQuestion["answers"] as $answer) {?>
-            <input type ="radio" id="<?=$answer?>"><label for="<?=$answer?>"><?=$answer?></label><br>
+            <input type ="radio" id="<?=$viewQuestion["question"]?>"><label for="<?=$viewQuestion["question"]?>"><?=$answer?></label><br>
             <?php }
             }
             ?>
