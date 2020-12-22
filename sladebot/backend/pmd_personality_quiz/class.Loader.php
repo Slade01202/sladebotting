@@ -33,9 +33,8 @@ class Loader
             $this->bannedIndex[$randIndex] = $randIndex;
             return $this->questions["questions"][$randIndex];
         } else {
-            $this->getSingleQuestion();
+            return false;
         }
-        return true;
     }
 
 

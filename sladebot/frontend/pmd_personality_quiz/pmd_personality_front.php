@@ -18,6 +18,9 @@ class pmdFront
     private function setQuestionArray($questionCount) {
         for ($i = 0; $i < $questionCount; $i++) {
             $this->questionStorage[$i] = $this->questions->getSingleQuestion();
+            while ($this->questionStorage[$i] = false) {
+                $this->questionStorage[$i] = $this->questions->getSingleQuestion();
+            }
         }
     }
 
