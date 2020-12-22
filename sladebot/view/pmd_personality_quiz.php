@@ -1,5 +1,5 @@
 <?php require_once(__DIR__ . "/../frontend/pmd_personality_quiz/pmd_personality_front.php");
-$viewQuestions = new pmdFront(1)?>
+$viewQuestions = new pmdFront(10)?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
