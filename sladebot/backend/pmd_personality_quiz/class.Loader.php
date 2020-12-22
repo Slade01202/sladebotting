@@ -30,7 +30,7 @@ class Loader
     public function getSingleQuestion() {
         $randIndex = rand(0, ($this->questionCount() - 2));
         if (!isset($randIndex, $this->bannedIndex)) {
-            $this->bannedIndex[] = $randIndex;
+            $this->bannedIndex[$randIndex] = $randIndex;
             return $this->questions["questions"][$randIndex];
         } else {
             $this->getSingleQuestion();
