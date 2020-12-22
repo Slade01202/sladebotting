@@ -11,8 +11,8 @@ class Loader
         $this->questions= Spyc::YAMLLoad($questionFile);
     }
 
-    private function getQuestions() {
-        return $this->questions;
+    private function questionCount() {
+        return count($this->questions["questions"]);
     }
 
     public function setQuestionPath($questionPath) {
@@ -25,8 +25,16 @@ class Loader
     }
 
     public function getSingleQuestion() {
-        $randIndex = rand(0, 54);
-        return $this->questions["questions"][$randIndex];
+        $bannedIndex = [];
+        $randIndex = rand(0, ($this->questionCount() - 1));
+        if (!isset($randIndex, $bannedIndex)) {
+            $bannedIndex[] = $randIndex;
+            return $this->questions["questions"][$randIndex];
+        } else {
+            $this->getSingleQuestion();
+        }
     }
+
+
 
 }
