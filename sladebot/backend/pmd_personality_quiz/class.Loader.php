@@ -29,9 +29,7 @@ class Loader
     public function getSingleQuestion() {
         $randIndex = rand(0, ($this->questionCount() - 2));
         if (!array_key_exists($randIndex, $this->bannedIndex)) {
-            $bannedIndex[$randIndex] = $randIndex;
-            var_dump($bannedIndex);
-             ?> <h1>Hi!</h1> <?php
+            $this->bannedIndex[$randIndex] = $randIndex;
             return $this->questions["questions"][$randIndex];
         } else {
             $this->getSingleQuestion();
