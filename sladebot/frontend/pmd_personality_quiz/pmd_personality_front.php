@@ -1,7 +1,31 @@
 <?php
 
-require_once(__DIR__ . "/../../backend/pmd_personality_quiz/class.Loader.php");
+require_once (__DIR__ . "/../../backend/pmd_personality_quiz/class.Loader.php");
 
-$questions = new Loader(__DIR__ . "/../../backend/pmd_personality_quiz/questions.yaml");
+class pmdFront
+{
+    private $question;
 
-var_dump($questions->getSingleQuestion());
+    private $questions;
+
+    private $questionStorage = [];
+
+    public function __construct($questionCount) {
+        $this->questions = new Loader(__DIR__ . "/../../backend/pmd_personality_quiz/questions.yaml");
+        $this->setQuestionArray($questionCount);
+    }
+
+    private function setQuestionArray($questionCount) {
+        for ($i = 0; $i < $questionCount; $i++) {
+            $this->questionStorage[$i] = $this->questions->getSingleQuestion();
+        }
+    }
+
+    public function getQuestionArray() {
+        return $this->questionStorage;
+    }
+
+
+
+}
+
