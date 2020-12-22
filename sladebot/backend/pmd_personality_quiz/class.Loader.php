@@ -33,6 +33,7 @@ class Loader
         } else {
             $this->getSingleQuestion();
         }
+        return false;
     }
 
 
