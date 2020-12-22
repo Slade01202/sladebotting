@@ -1,5 +1,6 @@
 <?php require_once(__DIR__ . "/../frontend/pmd_personality_quiz/pmd_personality_front.php");
-$viewQuestions = new pmdFront(30)?>
+$viewQuestions = new pmdFront(30);
+$i = 0;?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,10 +8,11 @@ $viewQuestions = new pmdFront(30)?>
     </head>
     <body>
         <form id="questions">
-            <?php foreach ($viewQuestions->getQuestionArray() as $viewQuestion) {?>
+            <?php foreach ($viewQuestions->getQuestionArray() as $viewQuestion) {
+                $i = $i + 1?>
             <h4><?= $viewQuestion["question"]?></h4><br>
             <?php foreach ($viewQuestion["answers"] as $answer) {?>
-            <input type ="radio" name="<?=$viewQuestion["question"]?>"><label for="<?=$viewQuestion["question"]?>"><?=$answer?></label><br>
+            <input type ="radio" name="<?=$viewQuestion["question"]?>"><label for="<?=$viewQuestion["question"]?>"><?=$answer . $i?></label><br>
             <?php }
             }
             ?>
