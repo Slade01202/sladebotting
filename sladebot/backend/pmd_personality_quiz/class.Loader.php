@@ -7,7 +7,7 @@ class Loader
 
     private $questions;
 
-    private $bannedIndex;
+    private $bannedIndex = [];
 
     private function setQuestions($questionFile) {
         $this->questions= Spyc::YAMLLoad($questionFile);
@@ -29,7 +29,7 @@ class Loader
 
     public function getSingleQuestion() {
         $randIndex = rand(0, ($this->questionCount() - 2));
-        if (!isset($randIndex, $bannedIndex)) {
+        if (!array_key_exists($randIndex, $this->bannedIndex)) {
             $bannedIndex[$randIndex] = $randIndex;
             return $this->questions["questions"][$randIndex];
         } else {
