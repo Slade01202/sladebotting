@@ -31,7 +31,7 @@ class Loader
         if (!array_key_exists($randIndex, $this->bannedIndex)) {
             $bannedIndex[$randIndex] = $randIndex;
             var_dump($bannedIndex);
-            echo "Hi!";
+             ?> <h1>Hi!</h1> <?php
             return $this->questions["questions"][$randIndex];
         } else {
             $this->getSingleQuestion();
