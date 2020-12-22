@@ -15,7 +15,7 @@ class Loader
         return count($this->questions["questions"]);
     }
 
-    public function setQuestionPath($questionPath) {
+    private function setQuestionPath($questionPath) {
         $this->questionPath = $questionPath;
     }
 
