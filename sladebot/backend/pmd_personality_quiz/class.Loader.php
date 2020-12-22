@@ -28,7 +28,7 @@ class Loader
     }
 
     public function getSingleQuestion() {
-        $randIndex = rand(0, ($this->questionCount() - 1));
+        $randIndex = rand(0, ($this->questionCount() - 2));
         if (!isset($randIndex, $bannedIndex)) {
             $bannedIndex[] = $randIndex;
             return $this->questions["questions"][$randIndex];
