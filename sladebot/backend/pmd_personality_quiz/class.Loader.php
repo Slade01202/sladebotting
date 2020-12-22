@@ -24,11 +24,12 @@ class Loader
     public function __construct($questionPath) {
         $this->setQuestionPath($questionPath);
         $this->setQuestions($this->questionPath);
+        $this->bannedIndex = [];
     }
 
     public function getSingleQuestion() {
         $randIndex = rand(0, ($this->questionCount() - 2));
-        if (!isset($randIndex, $this->bannedIndex)) {
+        if (!array_key_exists($randIndex, $this->bannedIndex)) {
             $bannedIndex[$randIndex] = $randIndex;
             var_dump($bannedIndex);
             echo PHP_EOL;
