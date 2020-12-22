@@ -34,6 +34,7 @@ class Loader
             var_dump($this->questions["questions"][$randIndex]);
             return $this->questions["questions"][$randIndex];
         } else {
+            echo "<h1> hi!</h1>";
             $this->getSingleQuestion();
         }
     }
