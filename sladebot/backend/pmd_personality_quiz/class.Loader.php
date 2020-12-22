@@ -36,7 +36,6 @@ class Loader
         } else {
             $this->getSingleQuestion();
         }
-        return true;
     }
 
 
