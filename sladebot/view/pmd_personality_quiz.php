@@ -9,10 +9,10 @@ $i = 0?>
     <body>
         <form id="questions">
             <?php foreach ($viewQuestions->getQuestionArray() as $viewQuestion) {
-                $i++?>
-            <h4><?=$i . " . " . $viewQuestion["question"]?></h4><br>
-            <?php foreach ($viewQuestion["answers"] as $answer) {
+                $i++;
                 var_dump($viewQuestion);?>
+            <h4><?=$i . " . " . $viewQuestion["question"]?></h4><br>
+            <?php foreach ($viewQuestion["answers"] as $answer) {?>
             <input type ="radio" name="<?=$viewQuestion["question"]?>"><label for="<?=$viewQuestion["question"]?>"><?=$answer?></label><br>
             <?php }
             }
