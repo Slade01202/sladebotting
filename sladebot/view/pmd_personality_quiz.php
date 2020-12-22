@@ -14,6 +14,7 @@ $viewQuestions = new pmdFront(10)?>
             <?php }
             }
             ?>
+            <input type="submit" value="Submit!>
         </form>
     </body>
 </html>
