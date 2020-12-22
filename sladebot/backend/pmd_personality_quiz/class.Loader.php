@@ -24,7 +24,6 @@ class Loader
     public function __construct($questionPath) {
         $this->setQuestionPath($questionPath);
         $this->setQuestions($this->questionPath);
-        $this->bannedIndex = [];
     }
 
     public function getSingleQuestion() {
