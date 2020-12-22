@@ -1,0 +1,312 @@
+questions:
+  0:
+    question: A delinquent is hassling a girl on a busy street! What will you do?
+    answers:
+      - Help without hesitation. (Brave 3)
+      - Help, even if scared. (Hardy 2, Brave 2)
+      - Call the police. (Docile 1, Timid 1, Relaxed 1)
+      - Do nothing out of fear. (Timid 2)
+  1:
+    question: A foreign person has started up a conversation with you. To be honest, you don't have a clue what this fellow is saying. How do you reply?
+    answers:
+      - Haha! Yes. Very funny! (Jolly 3)
+      - Um, could you say that again? (Hardy 2)
+      - Right...well I gotta go. (Timid 2)
+  2:
+    question: A friend brought over something you'd forgotten. How do you thank your friend?
+    answer:
+      - Say thank you regularly. (Docile 2)
+      - Say thanks with a joke. (Naive 1, Lonely 1)
+      - Say thanks, but be cool. (Sassy 2)
+  3:
+    question: A human hand extends out of a toilet! What would you do?
+    answers:
+      - Scream and run. (Timid 2)
+      - Close the lid without a word. (Hardy 1, Calm 2)
+      - Shake hands with it. (Naive 1, Brave 2, Impish 1)
+  4:
+    question: A test is coming up. How do you study for it?
+    answers:
+      - Study hard. (Hardy 2)
+      - At the last second. (Relaxed 2)
+      - Ignore it and play. (Impish 2)
+  5:
+    question: Are there many things you would like to do?
+    answers:
+      - Yes. (Hardy 1, Impish 2)
+      - No. (Quirky 2, Sassy 1)
+  6:
+    question: Are you a cheerful personality?
+    answers:
+      - Yes. (Naive 1, Jolly 2)
+      - No. (Quirky 1, Sassy 1)
+  7:
+    question: Are you often late for school or meetings?
+    answers:
+      - Yes (Sassy 1, Relaxed 2)
+      - No (Hardy 2, Hasty 1)
+  8:
+    question: Can you focus on something you like?
+    answers:
+      - Yes. (Hardy 2, Docile 1)
+      - No. (Quirky 2)
+  9:
+    question: Can you go into a haunted house?
+    answers:
+      - No problem. (Brave 3)
+      - Uh...n-no... (Quirky 2)
+      - With someone I like. (Sassy 2)
+  10:
+    question: Can you sincerely thank someone when you are grateful?
+    answers:
+      - Yes. (Calm 1, Docile 2)
+      - No. (Quirky 1, Sassy 2)
+  11:
+    question: Do you dream of lounging around idly without much excitement?
+    answers:
+      - Yes. (Calm 2)
+      - No. (Impish 2)
+  12:
+    question: Do you fall asleep without noticing?
+    answers:
+      - Yes (Calm 1, Relaxed 2)
+      - No (Hardy 2)
+  13:
+    question: Do you hate to be the last person to leave class at the end of the day?
+    answers:
+      - Yes (Timid 1, Lonely 2)
+      - No (Impish 2)
+  14:
+    question: Do you like groan-inducing puns?
+    answers:
+      - Love them! (Naive 3, Impish 1)
+      - A little (Jolly 2)
+      - Spare me (Sassy 2)
+  15:
+    question: Do you like pranks?
+    answers:
+      - Yes. (Impish 2)
+      - No. (Docile 1, Relaxed 1)
+  16:
+    question: Do you like to imagine things for your own amusement?
+    answers:
+      - Yes. (Naive 2)
+      - No. (Hasty 2)
+  17:
+    question: Do you like to noisily enjoy yourself with others?
+    answers:
+      - Yes. (Lonely 1, Jolly 2)
+      - No. (Timid 1)
+  18:
+    question: Do you often yawn?
+    answers:
+      - Yes. (Calm 2, Relaxed 1)
+      - No. (Hardy 1, Hasty 2)
+  19:
+    question: Do others sometimes call you childish?
+    answers:
+      - Yes. (Naive 2, Jolly 1)
+      - No. (Calm 1)
+  20:
+    question: Do others tell you to watch what you say?
+    answers:
+      - Yes. (Sassy 2, Impish 1)
+      - No. (Calm 2)
+  21:
+    question: Do you feel lonesome when you are alone?
+    answers:
+      - Yes. (Timid 1, Lonely 2)
+      - No. (Sassy 2)
+  22:
+    question: Do you get the feeling you've slowed down lately?
+    answers:
+      - Yes. (Relaxed 2)
+      -  No. (Hasty 2)
+  23:
+    question: Do you like to fight?
+    answers:
+      - Yes. (Timid 2, Impish 1)
+      - No. (Calm 2, Lonely 1)
+  24:
+    question: Do you occasionally consider yourself to be dull and over cautious?
+    answers:
+      - Yes. (Calm 2, Docile 1)
+      - No. (Hardy 2)
+  25:
+    question: Do you sometimes run out of things to do all of a sudden?
+    answers:
+      - Yes. (Quirky 2)
+      - No. (Hardy 2)
+  26:
+    question: Do you tend to laugh a lot?
+    answers:
+      - Yes. (Docile 1, Naive 2)
+      - No. (Quirky 2)
+  27:
+    question: Do you think you are cool? Be honest.
+    answers:
+      - Yes. (Sassy 2)
+      - No. (Relaxed 2)
+  28:
+    question: Grab any finger on your left hand. Which digit did you grab?
+    answers:
+      - Thumb. (Timid 2)
+      - Index finger. (Hasty 2)
+      - Middle finger. (Jolly 2)
+      - Ring finger. (Sassy 2)
+      - Little finger. (Lonely 2)
+  29:
+    question: Have you ever made a pitfall trap?
+    answers:
+      - Yes. (Lonely 1, Impish 2)
+      - No. (Calm 2)
+  30:
+    question: How quickly do you respond to email?
+    answers:
+      - Reply right away. (Hardy 1, Hasty 1)
+      - May reply, may not. (Quirky 2)
+      - Too much trouble. (Sassy 2)
+  31:
+    question: It's a pleasant day at the beach. How do you feel?
+    answers:
+      - This feels great! (Jolly 2)
+      - Snore... (Relaxed 2)
+      - I want to go home soon! (Hasty 2)
+  32:
+    question: It's a weekend, but no one will play with you. What do you do?
+    answers:
+      - Go on a trip. (Lonely 1, Jolly 1)
+      - Hang around vacantly. (Calm 1, Relaxed 2)
+      - Huddle in a corner. (Timid 1, Lonely 3)
+  33:
+    question: It's the summer festival! Do you like carnivals?
+    answers:
+      - Love them! (Jolly 2)
+      - Don't care. (Quirky 1, Sassy 1)
+  34:
+    question: It's the summer holidays! Where would you like to go?
+    answers:
+      - The beach! (Jolly 2)
+      - Spas. (Calm 2)
+      - Anywhere. (Quirky 2)
+  35:
+    question: On vacation outings, you want to...
+    answers:
+      - Go alone. (Quirky 1, Hasty 1)
+      - Go with others. (Lonely 1, Jolly 1)
+  36:
+    question: Somebody calls you "weird but funny" How does that make you feel?
+    answers:
+      - Happy! (Lonely 1, Naive 1)
+      - Not happy. (Hasty 1, Sassy 1)
+  37:
+    question: The road forks to the right and left. You are told there is treasure on the right. What do you do?
+    answers:
+      - Instantly go right. (Docile 2)
+      - It's a trap! Go left! (Sassy 2)
+      - Choose either side. (Quirky 2)
+  38:
+    question: There is a bucket. If you put water in it, how high will you fill it?
+    answers:
+      - Full. (Hardy 2)
+      - Half. (Calm 2)
+      - A little. (Quirky 2)
+  39:
+    question: There is a person you like, but here is no opportunity to get close. What do you do?
+    answers:
+      - Bravely declare my love. (Hardy 1, Brave 3)
+      - Might say hello. (Quirky 2)
+      - Pull a prank to get attention. (Impish 2)
+      - Look from afar. (Timid 2)
+  40:
+    question: There is a scream from behind a door! How will you react?
+    answers:
+      - Yank open the door. (Hardy 1, Brave 3)
+      - Scream in unison! (Naive 2)
+  41:
+    question: There is a wallet on the side of the road. What do you do?
+    answers:
+      - Turn it in to the police. (Docile 2)
+      - Yay! Yay! (Naive 2)
+      - Is anyone watching... (Impish 2)
+  42:
+    question: There is an alien invasion! What will you do?
+    answers:
+      - Fight. (Go to next question)
+      - Run. (Timid 2)
+      - Ignore it. (Relaxed 2)
+  43:
+    question: What do you do with you room's light when you go to bed?
+    answers:
+      - Leave it on. (Timid 1, Lonely 2)
+      - Turn it off. (Calm 2)
+  44:
+    question: When the going gets tough, do you get going?
+    answers:
+      - Yes (Hardy 2, Brave 2)
+      - No (Quirky 2, Sassy 2)
+  45:
+    question: You are offered a choice of two gifts. Which one will you take?
+    answers:
+      - Big Box (Docile 2, Naive 1)
+      - Small Box (Timid 2, Calm 1)
+  46:
+    question: You are suddenly locked inside a pitch black room! What do you do?
+    answers:
+      - Kick the door. (Timid 2)
+      - Cry. (Lonely 2)
+      - Clean it. (Quirky 1, Impish 2)
+  47:
+    question: You broke a rotten egg in your room! What do you do?
+    answers:
+      - Open a window right away. (Docile 2, Hasty 1)
+      - Sniff it first. (Relaxed 1, Naive 2)
+  48:
+    question: You come across a treasure chest! What do you do?
+    answers:
+      - Open it right away! (Hasty 2)
+      - No...It could be a trap... (Timid 2)
+      - It's going to be empty... (Sassy 2)
+  49:
+    question: You win a lottery! What do you do with the money?
+    answers:
+      - Spend it now. (Hasty 1, Jolly 2)
+      - Save it. (Hardy 1, Quirky 1)
+      - Give it away. (Quirky 2, Brave 2)
+  50:
+    question: You receive a gift! But you don't know what's in it. What do you do?
+    answers:
+      - Open it now. (Hasty 2)
+      - Open it later. (Calm 2)
+      - Get someone to open it. (Timid 2)
+  51:
+    question: Your country's leader is in front of you. How do you speak to him or her?
+    answers:
+      - Speak calmly. (Calm 2)
+      - Speak nervously. (Docile 2)
+      - WHATEVER! (Sassy 2)
+  52:
+    question: Your friend fails to show up for a meeting at the promised time. What do you do?
+    answers:
+      - Become irritated. (Docile 1, Hasty 2)
+      - Wait patiently. (Relaxed 2)
+      - Get angry and bail. (Hasty 3)
+  53:
+    question: Your friend is being bullied! What do you do?
+    answers:
+      - Face up to the bully. (Brave 3)
+      - Caution the bully from afar. (Timid 2)
+      - Heckle the bully from behind. (Brave 3, Impish 1)
+  54:
+    question: You're going bungee jumping for the first time. Since it's scary you decide to test the rope with a doll...The bungee cord snaps! Do you still try to make the jump?
+    answers:
+      - Yes. (Brave 3, Impish 1)
+      - No. (Timid 1, Docile 2)
+  55:
+    question: You valiantly fight the aliens...but you are defeated. An alien tells you, "YOU HAVE IMPRESSED US. IT WAS A PLEASURE TO SEE. JOIN US, AND TOGETHER WE SHALL RULE THE WORLD." How do you reply?
+    answers:
+      - Rule with the aliens! (Sassy 1, Relaxed 1)
+      - Refuse. (Brave 4)
+
+
+
