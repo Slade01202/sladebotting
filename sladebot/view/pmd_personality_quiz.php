@@ -4,7 +4,6 @@ $viewQuestions = new pmdFront(10)?>
 <html lang="en">
 <head>
     <title>PMD Personality Quiz</title>
-    <link href="/sladebot/frontend/pmd_personality_quiz/pmd_personality_front.php">
 </head>
 <body>
     <form id="questions">
