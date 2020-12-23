@@ -9,8 +9,13 @@ output:
 """
 
 
+def initialize(filename):
+    with open(filename, "w") as fileout:
+        fileout.write("Sample")
+
+
 def main():
     print("Cry")
 
 
-main()
+initialize("words.txt")
