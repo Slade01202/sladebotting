@@ -9,13 +9,17 @@ output:
 """
 
 
-def initialize(filename):
-    with open(filename, "w") as fileout:
-        fileout.write("Sample")
+def initializeDictionary():
+    dictionary = []
+    with open("words.txt", "r") as filein:
+        for line in filein:
+            dictionary.append(line)
+    return dictionary
 
 
 def main():
     print("Cry")
 
 
-initialize("words.txt")
+dic = initializeDictionary()
+print(dic)
