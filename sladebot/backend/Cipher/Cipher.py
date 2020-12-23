@@ -19,14 +19,53 @@ def initialize_dictionary():
     return dictionary
 
 
-def decode():
-    dic = initialize_dictionary()
-    print("decode")
+# getter method included for possible external pull implementation
+def get_encoder():
+    """
+    Default encoder, by index:
+    0: Period (.)
+    1: Space ( )
+    2: a, b, c
+    3: d, e, f
+    4: g, h, i
+    5: j, k, l
+    6: m, n, o
+    7: p, q, r, s
+    8: t, u, v
+    9: w, x, y, z
+    """
+    encoder = [["."], [" "], ["a", "b", "c"], ["d", "e", "f"], ["g", "h", "i"], ["j", "k", "l"], ["m", "n", "o"], ["p", "q", "r", "s"], ["t", "u", "v"], ["w", "x", "y", "z"]]
+
+    return encoder
 
 
-def encode():
+# getter method included for possible external pull implementation
+def get_decoder():
+    decoder = []
+
+    return decoder
+
+
+def encode(code):
+    encoded = ""
+    encoder = get_encoder()
+    for letter in code:
+        check = True
+        for x in range(encoder):
+            check = True
+            if letter in encoder[x]:
+                encoded += str(x)
+                check = False
+        if check:
+            encoded += letter
+    return encoded
+
+
+def decode(code):
+    decoder = get_decoder()
     dic = initialize_dictionary()
-    print("encode")
+
+    return code
 
 
 def main():
