@@ -47,12 +47,12 @@ def get_decoder():
 
 
 def encode(code):
+    code = str(code).lower()
     encoded = ""
     encoder = get_encoder()
     for letter in code:
         check = True
-        for x in range(encoder):
-            check = True
+        for x in range(len(encoder)):
             if letter in encoder[x]:
                 encoded += str(x)
                 check = False
@@ -70,3 +70,6 @@ def decode(code):
 
 def main():
     print("Cry")
+
+
+print(encode("wow, that's really cool. watch this"))
