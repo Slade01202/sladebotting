@@ -41,7 +41,7 @@ def get_encoder():
 
 # getter method included for possible external pull implementation
 def get_decoder():
-    decoder = []
+    decoder = [["."], [" "], ["a", "b", "c"], ["d", "e", "f"], ["g", "h", "i"], ["j", "k", "l"], ["m", "n", "o"], ["p", "q", "r", "s"], ["t", "u", "v"], ["w", "x", "y", "z"]]
 
     return decoder
 
@@ -62,10 +62,17 @@ def encode(code):
 
 
 def decode(code):
+    decoded = ""
     decoder = get_decoder()
     dic = initialize_dictionary()
+    for letter in code:
+        print()
 
-    return code
+    return decoded
+
+
+def dic_lookup(decoder, dic):
+    print()
 
 
 def main():
