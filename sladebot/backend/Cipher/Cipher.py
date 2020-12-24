@@ -62,9 +62,13 @@ def encode(code):
 
 
 def decode(code):
+    code = str(code).lower()
     decoded = ""
     decoder = get_decoder()
     dic = initialize_dictionary()
+
+    # for starters, split the string into lists of consecutive numerical punctuation (0 & 1)
+    # and other numbers (2-9) with non numerical punctuation (any symbol in the string)
     for letter in code:
         print()
 
