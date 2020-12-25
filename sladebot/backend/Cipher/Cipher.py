@@ -67,10 +67,21 @@ def decode(code):
     decoder = get_decoder()
     dic = initialize_dictionary()
 
-    # for starters, split the string into lists of consecutive numerical punctuation (0 & 1)
+    # for starters, split the string into a list of lists, split by numerical punctuation (0 & 1)
     # and other numbers (2-9) with non numerical punctuation (any symbol in the string)
+    # the second item in each interior list is an identifier on whether it is numerical punctuation
+    # (ex. 969106423 would split into [[969, False], [10, True], [6423, False]])
+    punctuation = []
+    last_was_punctuation = True
+    this_is_punctuation = True
+    list_pos = 0
     for letter in code:
-        print()
+        if ord(letter) == 1: # Check if ascii 0 or 1
+            this_is_punctuation = True
+        else:
+            this_is_punctuation = False
+
+
 
     return decoded
 
