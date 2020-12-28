@@ -12,10 +12,10 @@ from pathlib import Path
 
 # takes dictionary file and returns it in array form
 def initialize_dictionary():
-    dictionary = []
+    dictionary = set()
     with open("{}\\words.txt".format(Path(__file__).parent.absolute()), "r") as filein:
         for line in filein:
-            dictionary.append(line.strip())
+            dictionary.add(line.strip())
     return dictionary
 
 
@@ -94,4 +94,5 @@ def main():
     print("Cry")
 
 
-print(encode("wow, that's really cool. watch this"))
+print(initialize_dictionary())
+#print(encode("wow, that's really cool. watch this"))
