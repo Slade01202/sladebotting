@@ -95,4 +95,4 @@ def main():
 
 
 print(initialize_dictionary())
-#print(encode("wow, that's really cool. watch this"))
+# print(encode("wow, that's really cool. watch this"))
