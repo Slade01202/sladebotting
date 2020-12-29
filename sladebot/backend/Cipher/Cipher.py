@@ -11,12 +11,12 @@ from pathlib import Path
 
 
 # takes dictionary file and returns it in array form
-def initialize_dictionary():
-    dictionary = set()
+def initialize_wordlist():
+    wordlist = set()
     with open("{}\\words.txt".format(Path(__file__).parent.absolute()), "r") as filein:
         for line in filein:
-            dictionary.add(line.strip())
-    return dictionary
+            wordlist.add(line.strip())
+    return wordlist
 
 
 # getter method included for possible external pull implementation
@@ -65,7 +65,7 @@ def decode(code):
     code = str(code).lower()
     decoded = ""
     decoder = get_decoder()
-    dic = initialize_dictionary()
+    wordlist = initialize_wordlist()
 
     # for starters, split the string into a list of lists, split by numerical punctuation (0 & 1)
     # and other numbers (2-9) with non numerical punctuation (any symbol in the string)
@@ -86,7 +86,7 @@ def decode(code):
     return decoded
 
 
-def dic_lookup(decoder, dic):
+def wordlist_lookup(decoder, wordlist):
     print()
 
 
@@ -94,5 +94,5 @@ def main():
     print("Cry")
 
 
-print(initialize_dictionary())
-# print(encode("wow, that's really cool. watch this"))
+# print(initialize_wordlist())
+print(encode("This is a test string... It will be given to a rat."))
