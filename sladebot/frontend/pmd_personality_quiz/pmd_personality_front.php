@@ -2,9 +2,7 @@
 
 require_once (__DIR__ . "/../../backend/pmd_personality_quiz/class.Loader.php");
 
-class pmdFront
-{
-    private $question;
+class pmdFront {
 
     private $questions;
 
