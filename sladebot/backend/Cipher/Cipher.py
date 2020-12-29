@@ -86,8 +86,10 @@ def decode(code):
     return decoded
 
 
-def wordlist_lookup(decoder, wordlist):
-    print()
+# TODO
+def wordlist_lookup(word, decoder, wordlist, decoded_list):
+    for letter_pos in range(len(word)):
+        wordlist_lookup()
 
 
 def main():
