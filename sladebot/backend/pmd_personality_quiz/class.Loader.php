@@ -23,7 +23,7 @@ class Loader
     /**
      * @var array containing the banned during question generation
      */
-    private $bannedIndex;
+    private $bannedIndex = [];
 
     /**
      * @param $questionFile string loads up all questions into an array
@@ -62,8 +62,8 @@ class Loader
      */
     public function getSingleQuestion() {
         $randIndex = rand(0, ($this->questionCount() - 2));
-        if (!isset($randIndex, $bannedIndex)) {
-            $bannedIndex[] = $randIndex;
+        if (!in_array($randIndex, $this->bannedIndex)) {
+            $this->bannedIndex[] = $randIndex;
             return $this->questions["questions"][$randIndex];
         } else {
             return $this->getSingleQuestion();
