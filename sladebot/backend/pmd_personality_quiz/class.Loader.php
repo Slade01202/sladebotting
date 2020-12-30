@@ -58,7 +58,6 @@ class Loader
 
     /**
      * @return bool|array shouldn't return false, currently does, returns the subarray taken from $questions with the given index
-     * TODO: make this actually work :V
      */
     public function getSingleQuestion() {
         $randIndex = rand(0, ($this->questionCount() - 2));
