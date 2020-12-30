@@ -280,7 +280,7 @@ questions:
       - Open it later. (Calm 2)
       - Get someone to open it. (Timid 2)
   51:
-    question: Your country's leader is in front of you. How do you speak to him or her?
+    question: Your country's leader is in front of you. How do you speak to them?
     answers:
       - Speak calmly. (Calm 2)
       - Speak nervously. (Docile 2)
