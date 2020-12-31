@@ -7,7 +7,7 @@ $i = 0?>
         <title>PMD Personality Quiz</title>
     </head>
     <body>
-        <form id="questions">
+        <form id="questions" action="" method="post">
             <?php foreach ($viewQuestions->getQuestionArray() as $viewQuestion) {
                 $i++;?>
             <h4><?=$i . " . " . $viewQuestion["question"]?></h4><br>
