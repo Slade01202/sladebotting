@@ -13,12 +13,12 @@ class Loader
     /**
      * @var string path to the file containing all the questions + answers, usually filled by frontend
      */
-    private $questionPath;
+    protected $questionPath;
 
     /**
      * @var array containing sub arrays with all question + answer text in them
      */
-    private $questions;
+    protected $questions;
 
     /**
      * @var array containing the banned during question generation
@@ -53,7 +53,6 @@ class Loader
     public function __construct($questionPath) {
         $this->setQuestionPath($questionPath);
         $this->setQuestions($this->questionPath);
-        $this->bannedIndex = [];
     }
 
     /**
