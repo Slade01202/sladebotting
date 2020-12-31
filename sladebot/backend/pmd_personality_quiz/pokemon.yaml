@@ -1,0 +1,38 @@
+pokemon:
+  Docile:
+    - Bulbasaur
+    - Chikorita
+  Hardy:
+    - Charmander
+    - Pikachu
+  Jolly:
+    - Squirtle
+    - Totodile
+  Impish:
+    - Pikachu
+    - Cubone
+  Quirky:
+    - Meowth
+    - Treecko
+  Relaxed:
+    - Psyduck
+    - Squirtle
+  Brave:
+    - Machop
+    - Charmander
+  Naive:
+    - Totodile
+    - Eevee
+  Timid:
+    - Cyndaquil
+    - Mudkip
+  Sassy:
+    - Treecko
+    - Torchic
+  Calm:
+    - Mudkip
+    - Bulbasaur
+  Hasty:
+    - Skitty
+  Lonely:
+    - Psyduck
