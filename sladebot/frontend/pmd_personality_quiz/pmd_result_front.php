@@ -11,6 +11,6 @@ class resultFront {
     }
 
     public function debug() {
-        var_dump($this->resultBackend);
+        var_dump($this->resultBackend->getAnswers("Timid"));
     }
 }
