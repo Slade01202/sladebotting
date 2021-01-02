@@ -59,15 +59,12 @@ class Loader
      * @return array returns the subarray taken from $questions with the given index
      */
     public function getSingleQuestion() {
-        $randIndex = rand(0, ($this->questionCount() - 2));
-        if (!in_array($randIndex, $this->bannedIndex)) {
-            $this->bannedIndex[] = $randIndex;
-            return $this->questions["questions"][$randIndex];
-        } else {
-            return $this->getSingleQuestion();
-        }
+        do {
+            $randIndex = rand(0, ($this->questionCount() - 2));
+            if (!in_array($randIndex, $this->bannedIndex)) {
+                $this->bannedIndex[] = $randIndex;
+                return $this->questions["questions"][$randIndex];
+            }
+        } while (in_array($randIndex, $this->bannedIndex));
     }
-
-
-
 }
