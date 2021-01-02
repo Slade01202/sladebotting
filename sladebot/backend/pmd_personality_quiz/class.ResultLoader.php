@@ -1,5 +1,6 @@
 <?php
 
+require_once (__DIR__ . "/class.Loader.php");
 
 class ResultLoader extends Loader
 {
