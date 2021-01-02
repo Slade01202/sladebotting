@@ -18,7 +18,7 @@ class Loader
     /**
      * @var array containing sub arrays with all question + answer text in them
      */
-    protected $questions;
+    protected $content;
 
     /**
      * @var array containing the banned during question generation
@@ -29,14 +29,14 @@ class Loader
      * @param $questionFile string loads up all questions into an array
      */
     private function setQuestions($questionFile) {
-        $this->questions = Spyc::YAMLLoad($questionFile);
+        $this->content = Spyc::YAMLLoad($questionFile);
     }
 
     /**
      * @return int the number of questions in the $questions array
      */
     private function questionCount() {
-        return count($this->questions["questions"]);
+        return count($this->content["questions"]);
     }
 
     /**
@@ -63,7 +63,7 @@ class Loader
             $randIndex = rand(0, ($this->questionCount() - 2));
             if (!in_array($randIndex, $this->bannedIndex)) {
                 $this->bannedIndex[] = $randIndex;
-                return $this->questions["questions"][$randIndex];
+                return $this->content["questions"][$randIndex];
             }
         } while (in_array($randIndex, $this->bannedIndex));
     }
