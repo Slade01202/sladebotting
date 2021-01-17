@@ -5,6 +5,7 @@ $i = 0?>
 <html lang="en">
     <head>
         <title>PMD Personality Quiz</title>
+        <link href="../includes/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <form id="questions" action="results.php" method="post">
@@ -12,7 +13,7 @@ $i = 0?>
                 $i++;?>
             <h4><?=$i . " . " . $viewQuestion["question"]?></h4><br>
             <?php foreach ($viewQuestion["answers"] as $answer) {?>
-            <input type ="radio" name="<?=$viewQuestion["question"]?>" id="<?=$answer["question"]?>"><label for="<?=$viewQuestion["question"]?>"><?=$answer?></label><br>
+            <input type ="radio" name="<?=$i?>" id="<?=$i?>"><label for="<?=$i?>"><?=$answer?></label><br>
             <?php }
             }
             ?>
