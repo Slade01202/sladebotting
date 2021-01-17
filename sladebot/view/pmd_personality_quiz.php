@@ -12,7 +12,7 @@ $i = 0?>
                 $i++;?>
             <h4><?=$i . " . " . $viewQuestion["question"]?></h4><br>
             <?php foreach ($viewQuestion["answers"] as $answer) {?>
-            <input type ="radio" name="<?=$viewQuestion["question"]?>"><label for="<?=$viewQuestion["question"]?>"><?=$answer?></label><br>
+            <input type ="radio" name="<?=$viewQuestion["question"]?>" id="<?=$answer["question"]?>"><label for="<?=$viewQuestion["question"]?>"><?=$answer?></label><br>
             <?php }
             }
             ?>
