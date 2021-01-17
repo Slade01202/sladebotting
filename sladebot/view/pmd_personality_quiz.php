@@ -11,7 +11,7 @@ $i = 0?>
         <form id="questions" action="results.php" method="post">
             <?php foreach ($viewQuestions->getQuestionArray() as $viewQuestion) {
                 $i++;?>
-            <h4><?=$i . " . " . $viewQuestion["question"]?></h4><br>
+            <h4><?=$i . " . " . $viewQuestion["question"]?></h4>
             <?php foreach ($viewQuestion["answers"] as $answer) {?>
             <input type ="radio" name="<?=$i?>" id="<?=$i?>"><label for="<?=$i?>"><?=$answer?></label><br>
             <?php }
